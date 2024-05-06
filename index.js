@@ -27,7 +27,7 @@ mongoose.connect(process.env.MONGO_URL, {
 
 app.get('/', (req, res) => {
     // Sending an HTML tag as a response
-    res.send('<h1>you are on / </h1>');
+    res.json({message:"success /"})
   });
 const io = new Server(server, {
     cors: {
